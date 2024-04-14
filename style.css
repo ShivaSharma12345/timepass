@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x:hidden;
+}
+#hamcontainer{
+    visibility: hidden;
+    display: none;
+    height: 36vh;
+    width: 100vw;
+    position: absolute;
+    margin-top: 120px;
+    background-color: #b78d5a;
+
+}
+.section1 {
+    background-image: url(Capture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+
+}
+
+.nav {
+    grid-auto-flow: row;
+    display: grid;
+    grid-template-columns: 10% 70% 10% 10%;
+    place-items: center;
+    position: relative;
+    top: 20px;
+    margin-left: 10vw;
+    height: 12vh;
+    width: 80vw;
+    background-color: white;
+    border-radius: 8px;
+
+}
+
+.navitems {
+    width: 90%;
+    justify-content: space-around;
+    font-family: "Baloo 2";
+    display: flex;
+    gap: 1%;
+}
+
+.items {
+    font-size: 80%;
+    transition: all 0.1s ease-in-out;
+}
+
+.items:hover {
+    border-radius: 2px;
+    color: white;
+    background-color: #b78d5a;
+    font-size: 95%;
+    text-decoration: underline;
+}
+
+#signup {
+    width: 6vw;
+    height: 2vw;
+
+}
+
+#signup:hover {
+    background-color: rgb(63, 60, 60);
+    color: white;
+}
+
+#ham{
+    cursor: pointer;
+    display: none;
+    width: 20%;
+    height: 7%;
+    z-index: 2;
+    background-color: white;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 37px;
+}
+@media screen and (max-width: 580px){
+    .navitems
+    {
+        display: none;
+    }
+    #signup {
+        display: none;
+    }
+    .svg{
+        display: none;
+    }
+    .logo{
+        position: relative;
+        width: 200%;
+        left: 35vw;
+    }
+#ham{
+    display: block;
+}
+#hamcontainer{
+    visibility: visible;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    /* filter: blur(1px); */
+}
+.navigation{
+    gap: 10px;
+    color: white;
+    /* filter: blur(0px); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navigation a{
+    color: white;
+    text-decoration: none;
+}
+}
+.heading {
+    width: 40%;
+    position: relative;
+    color: white;
+    font-size: 2vw;
+    top: 40%;
+    left: 8%;
+    transition: left 1s ease-in-out 0.1s;
+}
+
+.subheading {
+    position: relative;
+    top: 43%;
+    left: 8%;
+    transition: left 1s ease-in-out 0.1s;
+    color: white;
+    font-size: 2vw;
+    width: 40%;
+}
+
+.homebuttons {
+    top: 45%;
+    left: 10%;
+    position: relative;
+    display: flex;
+    gap: 1vw;
+    width:90%;
+}
+
+#visitshop {
+    background-color: white;
+    color: #b78d5a;
+}
+
+.section2 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* height: 130vh; */
+    width: 100%;
+
+
+}
+
+.heading2 {
+    text-align: center;
+
+    padding: 4px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.gridcontainer {
+    position: relative;
+    justify-items: center;
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    /* height: 67vh; */
+    width: 45vw;
+    /* background-color: blak;c */
+}
+
+.cards {
+    background-color: white;
+    font-family: "Baloo 2", sans-serif;
+    color: rgba(0, 0, 0, 0.596);
+    text-align: center;
+    object-fit: contain;
+    /* height: 65%; */
+    width: 100%;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+
+}
+
+.subheading2 {
+    text-align: center;
+
+    padding: 4px;
+    font-size: 13px;
+    font-family: "Baloo 2", sans-serif;
+    color: #cea15dd5;
+
+}
+
+.news {
+    padding-top: 3vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 12px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    width: 60vw;
+
+
+}
+
+.news1:hover {
+    width: 110%;
+    transition: width 0.5s ease-in-out;
+}
+
+.news2:hover {
+    width: 110%;
+}
+
+.news3:hover {
+    width: 110%;
+}
+
+.imgnews {
+    object-fit: cover;
+
+    border-radius: 20px;
+    height: 40%;
+    width: 100%;
+    border: 2px;
+
+}
+
+.imgnews img {
+    border-radius: 20px;
+
+}
+
+.newstext {
+
+    position: relative;
+    top: 3%;
+    font-size: 25px;
+    color: black;
+    position: relative;
+    height: 60%;
+    width: 100%;
+}
+
+.newstext span {
+    font-family: "Baloo 2";
+    font-size: 15px;
+    color: grey;
+}
+
+
+button {
+    font: 1px;
+    background-color: #b78d5a;
+    font-family: "Baloo 2";
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    padding: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section4 {
+
+
+    width: 100%;
+    background-color: #2b1a13;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 2vh;
+    gap: 6vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 2px;
+
+}
+
+.shiva {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 60vh;
+    width: 20vw;
+
+}
+
+@media screen and (max-width: 1000px) {
+    body{
+        overflow-x:hidden;
+    }
+    #signup {
+        font-size: 60%;
+        width: 6vw;
+        height: 2vw;
+    }
+
+    .shiva {
+        height: 35vh;
+        width: 400px;
+        /* border: 2px solid black; */
+        /* overflow-y: scroll; */
+
+    }
+
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .news {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+    .imgnews {
+        height: 70%;
+    }
+
+    .newstext {
+        font-size: 20px;
+    }
+
+    .newstext span {
+        font-size: 10px;
+    }
+
+    .news1 {
+        height: 33%;
+        width: 309px;
+        background-color: white;
+        /* overflow: scroll; */
+
+    }
+
+    .news2 {
+        height: 33%;
+        width: 309px;
+        background-color: white;
+        /* overflow: scroll; */
+
+    }
+
+    .news3 {
+        height: 34%;
+        width: 309px;
+        background-color: white;
+        /* overflow: scroll; */
+
+    }
+    .svgnew{
+        height: 15px;
+        width: 15px;
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 656px){
+    body{
+        overflow-x:hidden;
+    }
+    .section3{
+        margin-top: 40px;
+    }
+    .heading{
+        font-size: 2.5vw;
+    }
+    .subheading{
+        font-size: 2.5vw;
+    }
+    #signup {
+        font-size: 40%;
+
+    }
+}
+@media screen and (max-width: 425px) {
+    body{
+        overflow-x:hidden;
+    }
+.section3{
+    margin-top: 40px;
+}
+.heading {
+    position: relative;
+    width: 80%;
+    top: 25%;
+    left: 6%;
+    transition: left 1s ease-in-out 0.1s;
+    font-size: 4vw;
+}
+    .subheading{
+        position: relative;
+        top: 28%;
+        left: 6%;
+        font-size: 6vw;
+        transition: left 1s ease-in-out 0.1s;
+    }
+    .homebuttons{
+        position: relative;
+        top: 44%;
+
+    }
+}
+@media screen and (max-width: 320px) {
+    body{
+        overflow-x:hidden;
+    }
+    .cards{
+        height: 65%;
+    }
+    .section3{
+        margin-top: 40px;
+    }
+    .heading {
+        position: relative;
+        width: 50%;
+        top: 37%;
+        left: 20%;
+        font-size: 4vw;
+    }
+        .subheading{
+            position: relative;
+            top: 38%;
+            left: 20%;
+            font-size: 4vw;
+        }
+        .homebuttons{
+            position: relative;
+            top: 40%;
+        }
+}
+.hri {
+    position: relative;
+    margin-top: 20px;
+    width: 90vw;
+    height: 0.5px;
+    background-color: rgba(253, 253, 253, 0.288);
+}
+
+h2 {
+    font-family: "Baloo 2", sans-serif;
+    color: white;
+    padding: 2vw;
+    font-size: 2em;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+li {
+    font-family: "Baloo 2", sans-serif;
+    color: #cea15d91;
+    list-style-type: none;
+    padding-left: 1.2vw;
+    font-size: 1em;
+}
+
+.none {
+    visibility: hidden;
+}
+
+#adjustment {
+    position: relative;
+    top: 8px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-family: "Baloo 2", sans-serif;
+    text-decoration: solid;
+}
+
+.footer span {
+    color: #cea15d91;
+}
